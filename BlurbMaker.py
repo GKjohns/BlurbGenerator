@@ -1,19 +1,6 @@
 import random
 
 
-#todo
-#    Use the markov maker in verse to tell if a corpus is
-#    "in the style" of another corpus.
-
-#	write in class that compares the percentage of "first, second"
-#	combinations that actually are in the corpus. Test it on books
-#	by the same author
-
-#	try setting a threshold frequentist style.
-
-
-
-
 class MarkovMaker:
 
 	def __init__(self, text):
@@ -96,13 +83,16 @@ class MarkovMaker:
 			string += word
 			string += ' '
 
-		return string[0].upper() + string[1:]
+		return string[0].upper() + string[1:]  #Capitalizes the first letter
 
 
 if __name__ == '__main__':
 	
 	number_of_words = 100
-	corpus = open('dorian_gray.txt', 'rb').read()
+
+	# Add Dorian Gray 5 times because Atlas Shrugged is sooooo freakin long and dominates the corpus
+	# Have fun, feed it whatever texts you want!
+	corpus = (5 * open('dorian_gray.txt', 'rb').read()) + open('atlas_shrugged.txt', 'rb').read()
 
 	my_maker = MarkovMaker(corpus)
 	my_maker.generateChain(number_of_words)
