@@ -38,8 +38,8 @@ class MarkovMaker:
 		words = []
 		for word in self.raw_text.split():
 			words.append(word.strip().translate(None, '"').lower())
+		
 		triples = {}
-
 		for i in xrange(len(words) - 2):
 			first, second, third = words[i], words[i+1], words[i+2]
 			key = (first, second)
@@ -78,7 +78,6 @@ class MarkovMaker:
 				words[i] = words[i][0].upper() + words[i][1:]
 
 		string = ''
-
 		for word in words:
 			string += word
 			string += ' '
