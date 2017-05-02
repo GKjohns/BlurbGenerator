@@ -1,7 +1,7 @@
 # BlurbGenerator
 Allows the user to generate text in the combined styles of Ayn Rand and Oscar Wilde
 
-#Highlights
+# Highlights
 
 > The editorial and threw his hat with an idiot's crudeness, without loopholes, detours or escape, that i am living in a minute! There were spurts of someone's powerful, confident touch. She snapped her fingers. Prince charming made me do so: it was dorian gray's soul had turned her head in a sudden, desperate cry of relief"
 
